@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 app.use(express.static(__dirname + '/public'));
-app.get('/home', function(req, res) {
+app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/bai2.html'));
 })
 
