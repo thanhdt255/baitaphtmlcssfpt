@@ -11,6 +11,9 @@ app.get('/', function(req, res) {
 app.get('/bai2', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/bai2.html'));
 })
+app.get('/bai3', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/bai3.html'));
+})
 
 app.listen(process.env.PORT || 3000, function() {
     console.log(__dirname)
