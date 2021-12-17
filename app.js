@@ -23,6 +23,9 @@ app.get('/bai6', function(req, res) {
 app.get('/bai5', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/bai5.html'));
 })
+app.get('/kiemtra', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/kiemtra.html'));
+})
 app.listen(process.env.PORT || 3000, function() {
     console.log(__dirname)
 });
